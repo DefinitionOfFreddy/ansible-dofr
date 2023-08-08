@@ -1,0 +1,4 @@
+- name: Install the package selected by playing the tasks from the 'packages_to_install' var 
+  include_tasks: "{{ item }}"
+  loop: "{{packages_to_install}}"
+    

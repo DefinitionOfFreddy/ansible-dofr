@@ -1,0 +1,4 @@
+- name: "Launch the ansible-doffr playbook"
+  hosts: all
+  roles:
+    - my-install

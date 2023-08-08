@@ -1,0 +1,10 @@
+- name: install tmux
+  package: 
+    name: tmux
+    state: present
+  become: true
+
+- name: add a tmux custom conf
+  ansible.builtin.template:
+    src: .tmux.conf.j2
+    dest: ~/.tmux.conf
