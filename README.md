@@ -9,3 +9,10 @@ ansible-playbook -b -i localhost, -c local playbook.yml -K
 ```
 
 This command will play the playbook with the inventory localhost (your machine), the connection local (no ssh needed), and will ask your sudo password (the K option)
+
+
+To play it without cloning this project, you can use [ansible-pull](https://docs.ansible.com/ansible/latest/cli/ansible-pull.html) :
+
+```command
+ansible-pull -U https://github.com/soyeux/ansible-doffr.git  playbook.yml -i localhost, -K
+```
