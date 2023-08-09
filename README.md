@@ -14,5 +14,5 @@ This command will play the playbook with the inventory localhost (your machine),
 To play it without cloning this project, you can use [ansible-pull](https://docs.ansible.com/ansible/latest/cli/ansible-pull.html) :
 
 ```command
-ansible-pull -U https://github.com/soyeux/ansible-doffr.git  playbook.yml -i localhost, -K
+ansible-pull -U https://github.com/definitionoffreddy/ansible-dofr  playbook.yml -i localhost, -K
 ```
