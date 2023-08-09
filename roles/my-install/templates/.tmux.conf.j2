@@ -1,2 +1,32 @@
-# Enable mouse mode
+# Avoid window renaming when changing folder
+set-window-option -g automatic-rename off
+set-option -g allow-rename off
+
+# Better history
+set-option -g history-limit 6000
+
+# Remap scroll keys
+bind-key -n PageUp copy-mode -u
+bind-key -n PageDown copy-mode -u
+
+
+# Mouse mode
 set -g mouse on
+
+
+# Set first window at 1
+set -g base-index 1
+setw -g pane-base-index 1
+
+# Shortcuts
+bind -n F1 select-window -t :1
+bind -n F2 select-window -t :2
+bind -n F3 select-window -t :3
+bind -n F4 select-window -t :4
+bind -n F5 select-window -t :5
+bind -n F6 select-window -t :6
+bind -n F7 select-window -t :7
+bind -n F8 select-window -t :8
+bind -n F9 select-window -t :9
+bind -n F10 select-window -t :10
+bind -n F12 resize-pane -Z
