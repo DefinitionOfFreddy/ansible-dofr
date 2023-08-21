@@ -1,7 +1,10 @@
 - name: install tmux
   package: 
-    name: tmux
+    name: "{{item}}"
     state: present
+  loop:
+    - tmux
+    - xclip
   become: true
 
 - name: add a tmux custom conf
